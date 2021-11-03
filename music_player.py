@@ -79,7 +79,7 @@ def play_prev():
     listBox.select_set(prev_song)
 
 
-#mmCreate Global Pause Variable
+#  Create Global Pause Variable
 global paused
 paused = False
 
@@ -157,7 +157,7 @@ for root, dirs, files in os.walk(rootpath):
         listBox.insert('end', filename)
 
 
-# # making sure screen does not expand too small or too large
+# making sure screen does not expand too small or too large
 canvas.update()
 canvas.minsize(listBox.winfo_width() + listBoxScroll.winfo_width() + label.winfo_width() + volButtonFrame.winfo_width()
                + canvasPadding, label.winfo_height() + listBoxScroll.winfo_height() + buttonFrame.winfo_height() +
